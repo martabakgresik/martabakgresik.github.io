@@ -153,3 +153,9 @@ Total: ${total}
             updateOrderSummary();
             updateOrderButton();
         }
+		
+		// Back to Top Button
+window.addEventListener('scroll', function() {
+  const backToTop = document.querySelector('.back-to-top');
+  backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
