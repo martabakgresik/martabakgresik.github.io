@@ -52,8 +52,8 @@
                             <option data-price="16000" data-desc="Pandan Kacang Coklat">Pandan Kacang Coklat- Rp16.000</option>
                             <option data-price="17000" data-desc="Red Velvet Kacang Coklat">Red Velvet Kacang Coklat - Rp17.000</option>
 							<option data-price="18000" data-desc="Coklat Keju">Coklat Keju- Rp18.000</option>
-                            <option data-price="18000" data-desc="Kacang Coklat Keju">Kacang Coklat Keju- Rp19.000</option>
-							<option data-price="18000" data-desc="Pandan Kacang Coklat Keju">Pandan Kacang Coklat Keju- Rp.20.000</option>
+                            <option data-price="19000" data-desc="Kacang Coklat Keju">Kacang Coklat Keju- Rp19.000</option>
+							<option data-price="20000" data-desc="Pandan Kacang Coklat Keju">Pandan Kacang Coklat Keju- Rp.20.000</option>
                         </select>
                     </div>
                 </div>
@@ -95,6 +95,7 @@
             <div class="card-body">
                 <h5 class="card-title mb-4"><i class="fas fa-list-check me-2"></i>Detail Pesanan</h5>
                 <div id="itemDetails" class="mb-4"></div>
+				<h4 class="mt-4">Total + Ongkir: <span id="totalPrice">Rp0</span></h4>
                 <div class="mb-4">
                     <label class="form-label">Catatan:</label>
                     <textarea class="form-control" id="notes" rows="2" placeholder="Contoh: Tambahkan keju ekstra"></textarea>
@@ -116,11 +117,11 @@
                         </div>
                         <div class="payment-method-item">
                             <span>QRIS</span>
-                            <img src="../assets/qris.webp" alt="QRIS" class="qris-image">
+                            <img src="assets/qris.webp" alt="QRIS" class="qris-image">
                         </div>
                     </div>
                 </div>
-                <h4 class="mt-4">Total: <span id="totalPrice">Rp0</span></h4>
+                
                 <div class="d-grid gap-2 mt-4">
                     <button id="orderBtn" class="btn btn-primary btn-lg" disabled><i class="fab fa-whatsapp me-2"></i>Pesan via WhatsApp</button>
                     <button class="btn btn-outline-secondary" onclick="resetForm()"><i class="fas fa-undo me-2"></i>Reset Pesanan</button>
